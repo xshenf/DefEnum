@@ -19,4 +19,7 @@ ENUM_CLASS(EMType3, char, EM_ARGS3)
 ENUM_CLASS(EMType41, int, EM_ARGS1, COUNT)
 ENUM_CLASS(EMType42, int, EM_ARGS2, COUNT)
 ENUM_CLASS(EMType43, int, EM_ARGS3, COUNT)
+
+const char* name = StringOf(EMType21::a);
+EMType21 type = TypeOfEMType21(name);
 ```
