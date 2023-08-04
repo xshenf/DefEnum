@@ -1,5 +1,7 @@
 # DefEnum
 
+Use a macro to define both enum class and string conversion functions
+
 usage
 ```c++
 #define EM_ARGS1(x) x(a) x(b1) x(b2)
