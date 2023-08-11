@@ -2,8 +2,8 @@
 // Created by Administrator on 2023/8/4.
 //
 
-#ifndef DEFENUM_DEFENUM_H
-#define DEFENUM_DEFENUM_H
+#ifndef DEFENUM_DEF_ENUM_H
+#define DEFENUM_DEF_ENUM_H
 
 #include <map>
 #include <string>
@@ -76,4 +76,4 @@
 #define ARGS_COUNT(...) ARGS_COUNT_HELPER(__VA_ARGS__, 5, 4, 3, 2, 1)
 #define ARGS_COUNT_HELPER(c5, c4, c3, c2, c1, n, ...) n
 
-#endif//DEFENUM_DEFENUM_H
+#endif//DEFENUM_DEF_ENUM_H
