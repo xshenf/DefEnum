@@ -8,8 +8,8 @@
 using namespace std;
 
 #define EM_ARGS1(x) x(a) x(b1) x(b2)
-#define EM_ARGS2(x) x(0, a) x(1, b1) x(2, b2)
-#define EM_ARGS3(x) x(0, a, "A") x(1, b1, "B1") x(2, b2, "B2")
+#define EM_ARGS2(x) x(1, a) x(3, b1) x(5, b2)
+#define EM_ARGS3(x) x(2, a, "A") x(4, b1, "B1") x(6, b2, "B2")
 
 ENUM_CLASS(EMType21, EM_ARGS1)
 ENUM_CLASS(EMType22, EM_ARGS2)

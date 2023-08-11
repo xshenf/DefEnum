@@ -12,7 +12,7 @@ target_include_directories(${PROJECT_NAME}
 		$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
 		)
 
-add_executable(example Example/example.cpp)
+add_executable(example example.cpp)
 target_link_libraries(example ${PROJECT_NAME})
 
 install(TARGETS ${PROJECT_NAME}
