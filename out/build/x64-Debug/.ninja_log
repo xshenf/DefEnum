@@ -1,7 +1,0 @@
-# ninja log v5
-2	470	7204740262650576	CMakeFiles/example.dir/example.cpp.obj	7722421dd6dcf93d
-471	671	7204740264540543	example.exe	1d168bad3a528ec0
-2	652	7204747638971989	CMakeFiles/example.dir/example.cpp.obj	7722421dd6dcf93d
-653	806	7204747640231992	example.exe	1d168bad3a528ec0
-3	371	7204748780854039	CMakeFiles/example.dir/example.cpp.obj	7722421dd6dcf93d
-371	472	7204748781660297	example.exe	1d168bad3a528ec0
