@@ -64,16 +64,18 @@
 
 #define ENUM_ARGS_COUNT(...) ARGS_COUNT(__VA_ARGS__),
 
-#define FIRST_ARG(...) FIRST_ARG_IMPL(__VA_ARGS__)
+#define FIRST_ARG(...) EXPANDS(FIRST_ARG_IMPL(__VA_ARGS__))
 #define FIRST_ARG_IMPL(x1, ...) x1
 
 #define EXTRA_ID1(valueType) valueType id = 0;
 #define EXTRA_ID2(valueType)
 #define EXTRA_ID3(valueType)
 
+// msvc拆分多个参数时，要包在EXPANDS内
+#define EXPANDS(...) __VA_ARGS__
 #define CONCAT(a, b) CONCAT_IMPL(a, b)
 #define CONCAT_IMPL(a, b) a##b
-#define ARGS_COUNT(...) ARGS_COUNT_HELPER(__VA_ARGS__, 5, 4, 3, 2, 1)
+#define ARGS_COUNT(...) EXPANDS(ARGS_COUNT_HELPER(__VA_ARGS__, 5, 4, 3, 2, 1))
 #define ARGS_COUNT_HELPER(c5, c4, c3, c2, c1, n, ...) n
 
 #endif//DEFENUM_DEF_ENUM_H
